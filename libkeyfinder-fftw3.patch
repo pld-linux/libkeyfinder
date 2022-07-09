@@ -1,0 +1,11 @@
+--- libkeyfinder-2.2.7/cmake/FindFFTW3.cmake.orig	2022-06-17 06:42:30.000000000 +0200
++++ libkeyfinder-2.2.7/cmake/FindFFTW3.cmake	2022-07-09 09:18:46.402414144 +0200
+@@ -42,7 +42,7 @@ find_path(FFTW3_INCLUDE_DIR
+ mark_as_advanced(FFTW3_INCLUDE_DIR)
+ 
+ find_library(FFTW3_LIBRARY
+-  NAMES fftw fftw3 fftw-3.3
++  NAMES fftw3 fftw-3.3 fftw
+   DOC "FFTW3 library"
+ )
+ mark_as_advanced(FFTW3_LIBRARY)
