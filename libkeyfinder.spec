@@ -1,17 +1,17 @@
-# TODO: catch2 for TESTING
+# TODO: catch2 v3 for TESTING
 Summary:	Library for estimating the musical key of digital audio
 Summary(pl.UTF-8):	Biblioteka do określania klucza muzyczego dźwięku cyfrowego
 Name:		libkeyfinder
-Version:	2.2.7
+Version:	2.2.8
 Release:	1
 License:	GPL v3+
 Group:		Libraries
 #Source0Download: https://github.com/mixxxdj/libkeyfinder/releases
 Source0:	https://github.com/mixxxdj/libkeyfinder/archive/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	51ac212ffe03b0a9452d2c960ae84245
+# Source0-md5:	249b537b91ad55c32459ba8624e51930
 Patch0:		%{name}-fftw3.patch
 URL:		https://github.com/mixxxdj/libkeyfinder
-BuildRequires:	cmake >= 3.4
+BuildRequires:	cmake >= 3.5
 BuildRequires:	fftw3-devel >= 3
 BuildRequires:	libstdc++-devel >= 6:4.7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
